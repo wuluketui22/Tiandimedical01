@@ -6,13 +6,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * clinin生产者启动类
+ * system生产者启动类
  */
-@MapperScan("com.whackon.witmed.clinic.*.mapper")
+@MapperScan("com.whackon.witmed.system.*.mapper")
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ClinicProvderStarter {
+public class SystemProviderStarter {
 	public static void main(String[] args) {
-		SpringApplication.run(ClinicProvderStarter.class, args);
+		SpringApplication.run(SystemProviderStarter.class, args);
 	}
 }
