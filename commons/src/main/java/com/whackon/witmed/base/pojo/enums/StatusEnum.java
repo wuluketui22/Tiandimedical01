@@ -1,4 +1,5 @@
 package com.whackon.witmed.base.pojo.enums;
+
 /**
  * <b>系统状态枚举信息</b>
  *
@@ -6,6 +7,8 @@ package com.whackon.witmed.base.pojo.enums;
  * @date 2022/8/24
  */
 public enum StatusEnum {
+	STATUS_ENABLE(BaseEnumConstants.STATUS_ENABLE,"启用"),
+	STATUS_DISABLE(BaseEnumConstants.STATUS_DISABLE,"禁用");
 	;
 	private String code;            // 状态编码
 	private String remark;          // 状态说明
