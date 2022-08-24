@@ -27,6 +27,9 @@
     <spring-cloud-starter-alibaba-nacos-discovery.version>2021.1</spring-cloud-starter-alibaba-nacos-discovery.version>
     <druid-spring-boot-starter.version>1.2.11</druid-spring-boot-starter.version>
     <mybatis-plus-boot-starter.version>3.5.2</mybatis-plus-boot-starter.version>
+    <lombok.version>1.18.24</lombok.version>
+    <mapstruct-processor.version>1.5.2.Final</mapstruct-processor.version>
+    <hutool-all.version>5.8.2</hutool-all.version>
   </properties>
 
   <dependencies>
@@ -66,9 +69,13 @@
     </dependencies>
   </dependencyManagement>
 
+
+
   <build>
     <pluginManagement>
       <plugins>
+
+
         <!-- 配置插件：Spring Boot Maven Plugin [BEGIN] -->
         <plugin>
           <groupId>org.springframework.boot</groupId>
