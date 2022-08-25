@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>clinic-provider</artifactId>
+  <artifactId>tiandimedical-clinic-provider</artifactId>
   <packaging>jar</packaging>
 
   <!-- 配置父级依赖：Witmed Parent [BEGIN] -->
   <parent>
     <groupId>com.whackon.witmed</groupId>
-    <artifactId>parent</artifactId>
+    <artifactId>tiandimedical-parent</artifactId>
     <version>1.0.0</version>
   </parent>
   <!-- 配置父级依赖：Witmed Parent [END] -->
@@ -24,7 +24,7 @@
   <dependencies>
     <dependency>
       <groupId>com.whackon.witmed</groupId>
-      <artifactId>data-commons</artifactId>
+      <artifactId>tiandimedical-data-commons</artifactId>
       <version>${parent.version}</version>
     </dependency>
   </dependencies>
