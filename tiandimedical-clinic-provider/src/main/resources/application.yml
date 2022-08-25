@@ -1,10 +1,10 @@
 ####### 配置项目启动端口号
 server:
-  port: 12345
+  port: 12344
 spring:
   ####### 配置项目应用名
   application:
-    name: tiandimedical-system-consumer
+    name: tiandimedical-clinic-provider
   ######## 配置项目加载配置文件
   profiles:
-    active: commons
+    active: data, commons
