@@ -1,23 +1,18 @@
 package com.whackon.witmed.patient.patient.pojo.vo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 /**
- * <b>医疗平台-患者功能-患者实体信息</b>
+ * <b>医疗平台-患者功能-患者视图信息</b>
  *
  * @author DELL
  * @date 2022/9/12
  */
 @Data
-@TableName(" sys_patient")
 public class PatientVO extends BaseVO {
 
 	private static final long serialVersionUID = -3601151221117433566L;
-	@TableId(type= IdType.INPUT)
 	private String id;						//主键,采用雪花算法
 	private String number;						//病历号
 	private String name;						//姓名
