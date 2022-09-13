@@ -1,4 +1,4 @@
-package com.whackon.witmed.emr.casesSummary.pojo.entity;
+package com.whackon.witmed.patient.patient.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -14,7 +14,7 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_patient_communication_details_table")
-public class SummaryOfCases extends BaseEntity {
+public class CommunicationDetails extends BaseEntity {
     private static final long serialVersionUID = 7090007596475277629L;
     @TableId(type = IdType.INPUT)
     private Long id;                        //主键采用雪花算法

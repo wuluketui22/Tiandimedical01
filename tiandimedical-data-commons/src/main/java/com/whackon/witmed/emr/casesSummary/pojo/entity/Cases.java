@@ -1,12 +1,10 @@
-package com.whackon.witmed.patient.pojo.entity;
+package com.whackon.witmed.emr.casesSummary.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.whackon.witmed.base.pojo.entity.BaseEntity;
 import lombok.Data;
-import org.bouncycastle.pqc.math.linearalgebra.PolynomialRingGF2;
-import org.springframework.context.annotation.Primary;
 
 /**
  * <b>天地医疗信息平台 - 系统功能 - 患者病例概要数据实体</b>
@@ -16,7 +14,7 @@ import org.springframework.context.annotation.Primary;
  */
 @Data
 @TableName("sys_summary_of_cases_data_sheet")
-public class PatientCases extends BaseEntity {
+public class Cases extends BaseEntity {
 	private static final long serialVersionUID = 7068066923394149062L;
 	@TableId(type = IdType.INPUT)
 	private Long id;                                                            //主键采用雪花算法
