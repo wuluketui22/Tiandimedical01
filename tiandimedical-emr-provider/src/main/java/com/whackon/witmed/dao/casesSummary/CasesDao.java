@@ -1,7 +1,7 @@
 package com.whackon.witmed.dao.casesSummary;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.whackon.witmed.emr.casesSummary.pojo.entity.SummaryOfCases;
+import com.whackon.witmed.emr.casesSummary.pojo.entity.Cases;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
  * @date 2022/9/13
  */
 @Repository
-public interface SummaryOfCasesDao extends BaseMapper<SummaryOfCases> {
+public interface CasesDao extends BaseMapper<Cases> {
 }
