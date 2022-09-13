@@ -1,5 +1,7 @@
 package com.whackon.witmed.patient.pojo.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.whackon.witmed.base.pojo.entity.BaseEntity;
 import lombok.Data;
@@ -14,7 +16,7 @@ import lombok.Data;
 @TableName("sys_patient_contact_details_table")
 public class PatientContact extends BaseEntity {
     private static final long serialVersionUID = -5892754924366498546L;
-
+    @TableId(type = IdType.INPUT)
     private Long id;                                     //主键采用雪花算法
     private String patientInformation;                   //患者信息
     private String theTypeOfCredential;                  //证件类型
