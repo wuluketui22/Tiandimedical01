@@ -1,8 +1,5 @@
 package com.whackon.witmed.emr.clinic.pojo.vo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
