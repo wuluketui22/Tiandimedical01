@@ -1,4 +1,4 @@
-package com.whackon.witmed.system.admin.dao;
+package com.whackon.witmed.dao.admin;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.whackon.witmed.system.admin.pojo.entity.Admin;

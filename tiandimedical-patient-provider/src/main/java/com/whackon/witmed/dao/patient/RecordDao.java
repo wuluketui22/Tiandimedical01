@@ -1,7 +1,7 @@
-package com.whackon.witmed.patient;
+package com.whackon.witmed.dao.patient;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.whackon.witmed.patient.patient.pojo.entity.Insurance;
+import com.whackon.witmed.patient.patient.pojo.entity.Record;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
  * @date 2022/9/12
  */
 @Repository
-public interface InsuranceDao extends BaseMapper<Insurance> {
+public interface RecordDao extends BaseMapper<Record> {
 }

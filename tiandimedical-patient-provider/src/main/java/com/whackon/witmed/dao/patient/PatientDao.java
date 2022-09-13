@@ -1,4 +1,4 @@
-package com.whackon.witmed.patient;
+package com.whackon.witmed.dao.patient;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.whackon.witmed.patient.patient.pojo.entity.Patient;

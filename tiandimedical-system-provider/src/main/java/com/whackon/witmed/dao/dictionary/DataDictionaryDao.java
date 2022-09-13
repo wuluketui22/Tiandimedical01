@@ -1,4 +1,4 @@
-package com.whackon.witmed.system.dictionary.dao;
+package com.whackon.witmed.dao.dictionary;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.whackon.witmed.system.dictionary.pojo.entity.DataDictionary;

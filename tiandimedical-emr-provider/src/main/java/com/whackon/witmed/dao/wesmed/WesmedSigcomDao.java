@@ -1,4 +1,4 @@
-package com.whackon.witmed.emr.wesmed.dao;
+package com.whackon.witmed.dao.wesmed;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.whackon.witmed.emr.wesmed.pojo.entity.WesmedSigcom;
