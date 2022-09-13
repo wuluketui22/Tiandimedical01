@@ -1,8 +1,5 @@
 package com.whackon.witmed.emr.observation.pojo.vo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
@@ -13,10 +10,8 @@ import lombok.Data;
  * @date 2022/9/12
  */
 @Data
-@TableName("emr_clinic_obs_plan")
 public class PlanVO extends BaseVO {
 	private static final long serialVersionUID = -2402286127077595713L;
-	@TableId(type= IdType.INPUT)
 	private String id;						//主键,采用雪花算法
 	private String soemr;						//所属急诊留观病
 	private String inspect;						//拟做的检查

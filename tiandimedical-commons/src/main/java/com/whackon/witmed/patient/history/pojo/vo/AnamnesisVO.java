@@ -1,22 +1,17 @@
 package com.whackon.witmed.patient.history.pojo.vo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 /**
- * <b>医疗平台-患者功能-患者既往病史实体信息</b>
+ * <b>医疗平台-患者功能-患者既往病史视图信息</b>
  *
  * @author DELL
  * @date 2022/9/12
  */
 @Data
-@TableName(" sys_anamnesis")
 public class AnamnesisVO extends BaseVO {
 	private static final long serialVersionUID = 6351930784191314137L;
-	@TableId(type= IdType.INPUT)
 	private String id;						//主键,采用雪花算法
 	private String patient;						//患者信息
 	private String dishistory;						//既往疾病史
