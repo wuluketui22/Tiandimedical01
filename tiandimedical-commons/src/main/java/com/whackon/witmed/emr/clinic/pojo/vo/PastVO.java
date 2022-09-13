@@ -7,16 +7,14 @@ import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 /**
- * <b>地医疗平台-门(急)诊病历子集数据集-既往史数据实体信息</b>
+ * <b>地医疗平台-门(急)诊病历子集数据集-既往史数据视图信息</b>
  *
  * @author DELL
  * @date 2022/9/12
  */
 @Data
-@TableName("emr_clinic_past")
 public class PastVO extends BaseVO {
 	private static final long serialVersionUID = -7692672464097760814L;
-	@TableId(type= IdType.INPUT)
 	private String id;						//主键,采用雪花算法
 	private String emrClinic;						//所属门(急)诊病历
 	private String project;						//既往观察-项目名称

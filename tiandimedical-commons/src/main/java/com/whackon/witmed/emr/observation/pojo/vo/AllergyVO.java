@@ -7,16 +7,14 @@ import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 /**
- * <b>地医疗平台-急诊留观病历子集-过敏史实体信息</b>
+ * <b>地医疗平台-急诊留观病历子集-过敏史视图信息</b>
  *
  * @author DELL
  * @date 2022/9/12
  */
 @Data
-@TableName("emr_clinic_obs_allergy")
 public class AllergyVO extends BaseVO {
 	private static final long serialVersionUID = -5144757346384395093L;
-	@TableId(type= IdType.INPUT)
 	private String id;						//主键,采用雪花算法
 	private String soemr;						//所属急诊留观病
 	private String allergic;						//过敏史
