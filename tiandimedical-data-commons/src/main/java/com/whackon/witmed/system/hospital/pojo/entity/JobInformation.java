@@ -1,4 +1,4 @@
-package com.whackon.witmed.system.admin.pojo.entity;
+package com.whackon.witmed.system.hospital.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

@@ -14,7 +14,7 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_system_personnel_job_information_table")
-public class SystemPersonnelJobInformation extends BaseEntity {
+public class PersonnelJob extends BaseEntity {
     private static final long serialVersionUID = -5323308458762911885L;
     @TableId(type = IdType.INPUT)
     private Long id;                    //主键采用雪花算法
