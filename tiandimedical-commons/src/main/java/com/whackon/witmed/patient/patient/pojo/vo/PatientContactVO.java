@@ -1,22 +1,17 @@
-package com.whackon.witmed.patient.pojo.entity;
+package com.whackon.witmed.patient.patient.pojo.vo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.whackon.witmed.base.pojo.entity.BaseEntity;
+import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 /**
- * <b>天地医疗信息平台 - 系统功能 - 患者联系人详情实体信息</b>
+ * <b>天地医疗信息平台 - 系统功能 - 患者联系人详情视图信息</b>
  *
  * @author YunHai
- * @date 2022/9/12
+ * @date 2022/9/13
  */
 @Data
-@TableName("sys_patient_contact_details_table")
-public class PatientContact extends BaseEntity {
+public class PatientContactVO extends BaseVO {
     private static final long serialVersionUID = -5892754924366498546L;
-    @TableId(type = IdType.INPUT)
     private Long id;                                     //主键采用雪花算法
     private String patientInformation;                   //患者信息
     private String theTypeOfCredential;                  //证件类型
