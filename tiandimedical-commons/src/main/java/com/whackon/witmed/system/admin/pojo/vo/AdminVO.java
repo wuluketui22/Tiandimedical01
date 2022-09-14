@@ -1,21 +1,16 @@
-package com.whackon.witmed.system.admin.pojo.entity;
+package com.whackon.witmed.system.admin.pojo.vo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.whackon.witmed.base.pojo.entity.BaseEntity;
+import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 /**
- * <b>天地医疗信息平台 - 系统功能 - 系统人员实体信息<b/>
+ * <b>天地医疗信息平台 - 系统功能 - 系统人员视图信息<b/>
  * @author yan
  * @date 2022/9/12
  */
 @Data
-@TableName("sys_system_mp_info_db")
-public class Admin extends BaseEntity {
-	private static final long serialVersionUID = 4226492550883944160L;
-	@TableId(type = IdType.INPUT)
+public class AdminVO extends BaseVO {
+	private static final long serialVersionUID = -7584920453456855383L;
 	private String id;                  // 主键采用雪花算法
 	private String jobNumber;           // 工号
 	private String name;                // 系统人员姓名
