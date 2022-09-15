@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * system生产者启动类
  */
-@MapperScan("com.whackon.witmed.system.*.mapper")
+@MapperScan("com.whackon.witmed.dao.*.mapper")
 @EnableDiscoveryClient
 @SpringBootApplication
 public class SystemProviderStarter {

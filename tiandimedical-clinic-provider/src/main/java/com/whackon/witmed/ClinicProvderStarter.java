@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * clinin生产者启动类
  */
-@MapperScan("com.whackon.witmed.clinic.*.mapper")
+@MapperScan("com.whackon.witmed.dao.*.mapper")
 @EnableDiscoveryClient
 @SpringBootApplication
 public class ClinicProvderStarter {
