@@ -38,4 +38,7 @@ public class BaseConstants {
 	 * <b>系统分页信息：默认每页显示数量</b>
 	 */
 	public static final Integer PAGE_SIZE=Integer.parseInt(props.getProperty("base.page.size"));
+
+	public static final String TOKEN_SECRET =props.getProperty("best.token.secret");
+
 }
