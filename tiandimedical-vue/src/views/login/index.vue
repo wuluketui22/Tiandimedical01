@@ -20,7 +20,7 @@
         <el-input
           ref="cellphone"
           v-model="loginForm.cellphone"
-          placeholder="请输入用户名"
+          placeholder="请输入手机号码"
           name="cellphone"
           type="text"
           tabindex="1"
@@ -60,20 +60,21 @@
 
 export default {
   name: 'Login',
-  data() {
+  data: function() {
     const validateCellphone = (rule, value, callback) => {
-      // 使用正则表达式校验手机号码
+      // 自定义手机号码校验规则，可以采用正则表达式进行校验
+      // 设置手机号码的正则表达式
       const cellphoneRegex = /^1[0-9]{10}$/
-      if (cellphoneRegex.test(value)) {
-        callback(new Error(('请输入正确的手机号码')))
+      if (!cellphoneRegex.test(value)) {
+        // 当手机号码不符合正则表达式时，也就是手机号码格式错误
+        callback(new Error('请填写正确的手机号码'))
       } else {
         callback()
       }
     }
-
     const validatePassword = (rule, value, callback) => {
       if (value.length < 6) {
-        callback(new Error('密码不能小于6位数字'))
+        callback(new Error('密码由大小写字母和数字组成，且不能小于6位'))
       } else {
         callback()
       }
@@ -84,7 +85,7 @@ export default {
         password: ''
       },
       loginRules: {
-        username: [{ required: true, trigger: 'blur', validator: validateCellphone }],
+        cellphone: [{ required: true, trigger: 'blur', validator: validateCellphone }],
         password: [{ required: true, trigger: 'blur', validator: validatePassword }]
       },
       loading: false,
